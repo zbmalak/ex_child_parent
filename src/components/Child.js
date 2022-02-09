@@ -12,8 +12,8 @@ function Child(props) {
     event.preventDefault();
 
     const newName = name;
-
     props.OnChangeName(newName);
+    setName('');
   };
 
   return (
@@ -23,9 +23,9 @@ function Child(props) {
         <form onSubmit={submitHandler}>
           <input
             type='text'
+            value={name}
             placeholder='Type new Parent name'
             onChange={changeHandler}
-            value={name}
           />
           <div className='form'>
             <button>Click!</button>
