@@ -12,7 +12,7 @@ function Child(props) {
     event.preventDefault();
 
     const newName = name;
-    props.OnChangeName(newName);
+    props.onChangeName(newName);
     setName('');
   };
 

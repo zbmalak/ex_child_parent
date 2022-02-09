@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='parent'>
       <h2>{name}</h2>
-      <Child OnChangeName={changeName} />
+      <Child onChangeName={changeName} />
     </div>
   );
 }
